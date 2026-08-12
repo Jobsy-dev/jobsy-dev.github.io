@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jobsy Johnson — AI Engineer and Full-Stack Developer building intelligent systems and production-ready applications.">
+  <meta name="author" content="Jobsy Johnson">
+  <title>Jobsy Johnson — AI Engineer & Full-Stack Developer</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="nav-wrap" id="navWrap">
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home">Jobsy<span>.</span></a>
+
+        <button class="menu" id="menuButton" aria-label="Open menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" class="nav-cta">Let's talk ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="orb one"></div>
+      <div class="orb two"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="reveal">
+            <div class="eyebrow">
+              <span class="dot"></span>
+              Open to AI & Software Engineering opportunities
+            </div>
+
+            <h1>
+              AI Engineer
+              <span class="hero-title-accent">& Full-Stack Developer.</span>
+            </h1>
+
+            <p class="hero-copy">
+              I build intelligent systems and production-ready applications,
+              combining AI engineering with full-stack software development
+              to solve practical problems.
+            </p>
+
+            <div class="actions">
+              <a class="btn btn-dark" href="#work">Explore my work ↓</a>
+              <a class="btn btn-light" href="resume.pdf" target="_blank">View resume ↗</a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <img class="hero-photo" src="images/profile.jpg" alt="Jobsy Johnson">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AI / ML</span><span>Computer Vision</span><span>Python</span>
+        <span>React</span><span>FastAPI</span><span>C#</span>
+        <span>ASP.NET</span><span>SQL Server</span>
+        <span>AI / ML</span><span>Computer Vision</span><span>Python</span>
+        <span>React</span><span>FastAPI</span><span>C#</span>
+        <span>ASP.NET</span><span>SQL Server</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div><div class="label">01 / About</div></div>
+          <div><h2>Engineering experience meets modern AI.</h2></div>
+        </div>
+
+        <div class="about-body">
+          <div class="reveal">
+            <p>
+              I'm Jobsy Johnson, an AI Engineer and Full-Stack Developer
+              based in Stockholm, Sweden. Before AI, I spent six-plus years
+              as a software developer in India, building HRMS systems for
+              airline clients and hospital management software, using C#,
+              ASP.NET and SQL Server.
+            </p>
+            <p>
+              I later completed an MSc in Artificial Intelligence at
+              Jönköping University, which shifted my focus toward computer
+              vision, retrieval, and reinforcement learning. I'm currently
+              an AI intern at Elajo AB, where my Master's thesis — an AI
+              system for identifying products in warranty claims — is
+              moving toward real use.
+            </p>
+            <div class="about-note">
+              Outside of work, I'm usually in the kitchen cooking or playing
+              with my kids. I also have a genuine interest in industrial
+              electrical engineering, which keeps me close to the physical
+              systems my AI work is built for. I try to stay positive-minded,
+              and bring that same energy to my work.
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="stats">
+              <div class="stat"><strong>6+</strong><span>Years of software development</span></div>
+              <div class="stat"><strong>8</strong><span>AI / ML projects shipped</span></div>
+              <div class="stat"><strong>3</strong><span>Degrees earned</span></div>
+            </div>
+            <div class="about-panel" style="margin-top:16px;">
+              <div class="panel-row"><b>Based in</b><span>Stockholm, Sweden</span></div>
+              <div class="panel-row"><b>Currently</b><span>AI Intern, Elajo AB</span></div>
+              <div class="panel-row"><b>Studying</b><span>MSc AI, Jönköping University</span></div>
+              <div class="panel-row"><b>Language</b><span>English (Swedish: beginner)</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div><div class="label">02 / Selected work</div></div>
+          <div>
+            <h2>A thesis-grade system, plus academic work spanning vision, RL and optimisation.</h2>
+          </div>
+        </div>
+
+        <!-- FEATURED PROJECT -->
+        <article class="featured reveal">
+
+          <div class="featured-visual">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">warranty-claims.elajo.se</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/flow-thesis.png" alt="Full pipeline diagram: upload photo, barcode detection, DINOv2 embedding, FAISS search, CLIP re-ranking, product identified, SQL server, ALEM09 form downloaded">
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-info">
+            <div class="project-index">FEATURED / 01</div>
+            <h3>AI-Assisted Industrial Product Identification</h3>
+
+            <p>
+              An AI system that identifies industrial products from a single
+              photo taken in the field. It first tries to read the product's
+              barcode directly; if that fails, it falls back to a visual
+              pipeline — DINOv2 generates an embedding for the photo, FAISS
+              searches a catalogue of thousands of product images for the
+              closest matches, and CLIP re-ranks those candidates for a
+              confident final match. Once identified, the system checks
+              warranty eligibility and downloads a pre-filled claim form —
+              turning a manual, multi-step lookup into a single upload.
+            </p>
+
+            <div class="tags">
+              <span class="tag">DINOv2</span>
+              <span class="tag">CLIP</span>
+              <span class="tag">FAISS</span>
+              <span class="tag">React</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQL Server</span>
+            </div>
+
+            <div class="stats" style="grid-template-columns:1fr 1fr;margin:20px 0;">
+              <div class="stat"><strong>50%</strong><span>Recall@1</span></div>
+              <div class="stat"><strong>75%</strong><span>Recall@5</span></div>
+            </div>
+
+            <a class="project-link" href="https://github.com/Jobsy-dev/Warranty-Claim-WebApp" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+
+        </article>
+
+        <!-- OTHER PROJECTS -->
+        <div class="project-grid">
+
+          <!-- TrackMate -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">trackmate.app</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/trackmate.jpg" alt="Illustration of an automated pallet classification system labeling EUR and Not-EUR pallets with confidence scores">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>PyTorch</span><span>ResNet50</span><span>MobileNetV2</span>
+              </div>
+              <h3>TrackMate — Pallet Detection & Classification</h3>
+              <p>Classifies pallets in warehouse photos as EUR or non-EUR, so they can be sorted and tracked automatically instead of by hand. Three CNN architectures were compared on a small, imbalanced set of real warehouse images — ResNet50 and EfficientNetB0 both collapsed onto the majority class, while MobileNetV2 held a genuinely balanced result across both categories, making it the model that shipped.</p>
+              <a class="project-link" href="https://github.com/Jobsy-dev/Trackmate" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- Warehouse Robot -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">warehouse-nav.local</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/warehouse-robot.jpg" alt="Warehouse Q-learning grid environment showing the robot's trained path">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>Python</span><span>Q-Learning</span><span>Tkinter</span>
+              </div>
+              <h3>Warehouse Robot Path Optimization</h3>
+              <p>A robot that teaches itself the shortest, safest route across a warehouse floor. It starts knowing nothing about the layout, explores using an ε-greedy policy that gradually shifts from random moves to learned ones, and is penalised for hitting shelves and rewarded for reaching its pickup or drop-off point. Training happens in two stages — start to pickup, then pickup to drop-off — and the learned policy was then tested against randomly shuffled shelf layouts to check it generalised rather than just memorising one warehouse.</p>
+              <a class="project-link" href="https://github.com/Jobsy-dev/Warehouse-Robot-Navigation" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- Freight -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">freight-analytics.local</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/freight.jpg" alt="Global freight analytics dashboard illustration showing shipment volume, cost, and route data">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>KNIME</span><span>Random Forest</span><span>Gradient Boosting</span>
+              </div>
+              <h3>Freight Cost & Carrier Analysis</h3>
+              <p>Looked at 60,000 shipment records across 30 organisations and 7 carriers to find out what actually drives freight costs. K-means clustering grouped shipments into distinct cost profiles first, then several regression models were trained and compared — Gradient Boosting came out ahead, giving a basis for recommending better carriers and flagging shipments costing more than they should.</p>
+            </div>
+          </article>
+
+          <!-- Travel Advisor -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">traveltripadvisor.local</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/travel-advisor.jpg" alt="Travel Trip Advisor homepage showing travel type categories">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>Flask</span><span>RDFLib</span><span>SPARQL</span>
+              </div>
+              <h3>Travel Trip Advisor</h3>
+              <p>A travel planning website that recommends destinations, activities and places to stay based on the type of traveller — solo, family, couple or senior. Instead of a conventional database, it's built around an RDF ontology describing destinations and activities as a knowledge graph, queried live with SPARQL through a Flask backend, and returns tailored results including flight-booking and map links.</p>
+              <a class="project-link" href="https://github.com/Jobsy-dev/Travel-Trip-Advisor" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- TSP -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">tsp-solver.local/results</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/tsp-flowchart.jpg" alt="Flowchart of the genetic algorithm experiment pipeline for the TSP solver">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>Python</span><span>NumPy</span><span>Genetic Algorithms</span>
+              </div>
+              <h3>Evolutionary TSP Solver</h3>
+              <p>Finds the shortest route connecting a set of cities using a genetic algorithm — a population of random routes evolves generation by generation through selection, crossover and mutation. Rather than settling on one configuration, it systematically compared roulette-wheel against tournament selection and one-point against two-point crossover, across 1,697 experiments on six benchmark problems ranging from 14 to 493 cities.</p>
+            </div>
+          </article>
+
+          <!-- PlastiSense -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">plastisense.local</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/plastisense.jpg" alt="Illustration of a water sensor buoy feeding an XGBoost classifier that triggers a contamination alert">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>XGBoost</span><span>Flask</span><span>Bootstrap</span>
+              </div>
+              <h3>PlastiSense — Plastic Waste Detection</h3>
+              <p>Detects plastic contamination in water by reading sensor data — pH, turbidity, TDS and conductivity — rather than requiring a lab test. An XGBoost classifier trained on these readings flags likely contamination, and the system automatically sends an email alert the moment it detects a problem, so issues can be caught without someone watching a dashboard.</p>
+              <a class="project-link" href="https://github.com/Jobsy-dev/Plastisense" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- House Price -->
+          <article class="project-card reveal">
+            <div class="proj-visual">
+              <div class="browser-frame">
+              <div class="browser-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <div class="browser-url">house-price.local</div>
+              </div>
+              <div class="browser-body">
+                <img src="images/houseprice.jpg" alt="Illustration of the data augmentation and feature engineering pipeline for house price prediction">
+              </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="tags">
+                <span>Scikit-Learn</span><span>XGBoost</span>
+              </div>
+              <h3>House Price Prediction</h3>
+              <p>Predicts house prices from a genuinely small dataset — just 22 rows from a Swedish villa builder. The data was augmented with small amounts of noise and expanded with engineered features like total area, wall-to-roof ratio and freight cost per square metre. Decision Tree, Random Forest and XGBoost were then trained and compared, with the Decision Tree ending up the most accurate despite being the simplest of the three.</p>
+              <a class="project-link" href="https://github.com/Jobsy-dev/House-Price-Prediction" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div><div class="label">03 / Technical skills</div></div>
+          <div>
+            <h2>AI engineering meets full-stack development.</h2>
+            <p>
+              A blend of applied AI and production software engineering —
+              from model training and evaluation to the full-stack systems
+              that put it in front of real users.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills">
+
+          <div class="skill-panel reveal">
+            <h3>AI / Machine Learning</h3>
+            <div class="skill-cloud">
+              <span class="skill">Python</span>
+              <span class="skill">PyTorch</span>
+              <span class="skill">TensorFlow</span>
+              <span class="skill">Keras</span>
+              <span class="skill">Scikit-learn</span>
+              <span class="skill">XGBoost</span>
+              <span class="skill">Deep Learning</span>
+              <span class="skill">Reinforcement Learning</span>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal">
+            <h3>Computer Vision & Retrieval</h3>
+            <div class="skill-cloud">
+              <span class="skill">DINOv2</span>
+              <span class="skill">CLIP</span>
+              <span class="skill">FAISS</span>
+              <span class="skill">OpenCV</span>
+              <span class="skill">ResNet</span>
+              <span class="skill">EfficientNet</span>
+              <span class="skill">MobileNetV2</span>
+              <span class="skill">Image Retrieval</span>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal">
+            <h3>Full-Stack Development</h3>
+            <div class="skill-cloud">
+              <span class="skill">React</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">TypeScript</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">HTML</span>
+              <span class="skill">CSS / Sass</span>
+              <span class="skill">FastAPI</span>
+              <span class="skill">Flask</span>
+              <span class="skill">C#</span>
+              <span class="skill">ASP.NET</span>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal">
+            <h3>Data, Databases & Tools</h3>
+            <div class="skill-cloud">
+              <span class="skill">SQL Server</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">Pandas</span>
+              <span class="skill">NumPy</span>
+              <span class="skill">Git</span>
+              <span class="skill">GitHub</span>
+              <span class="skill">Azure</span>
+              <span class="skill">CI/CD</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div><div class="label">04 / Experience</div></div>
+          <div>
+            <h2>From software development to AI engineering.</h2>
+            <p>
+              A career combining enterprise software development with
+              postgraduate AI engineering.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+
+          <article class="role reveal">
+            <div class="role-date">Jun 2026 – Present</div>
+            <div>
+              <h3>AI Intern</h3>
+              <div class="role-company">Elajo AB · Sweden</div>
+            </div>
+            <p>
+              Continuing to build on the visual retrieval system developed
+              during my thesis, now moving it toward full production use for
+              the warranty claims team.
+            </p>
+          </article>
+
+          <article class="role reveal">
+            <div class="role-date">Jan – Jun 2026</div>
+            <div>
+              <h3>Master's Thesis Student</h3>
+              <div class="role-company">Elajo AB · Sweden</div>
+            </div>
+            <p>
+              Designed and built a multimodal product-identification system
+              combining DINOv2, CLIP, FAISS and barcode detection for an
+              industrial warranty workflow, integrated into a full-stack web
+              application.
+            </p>
+          </article>
+
+          <article class="role reveal">
+            <div class="role-date">Oct – Dec 2025</div>
+            <div>
+              <h3>AI Research Intern</h3>
+              <div class="role-company">Jönköping University · Sweden</div>
+            </div>
+            <p>
+              Built NLP pipelines to extract structured information from
+              research literature, and dashboards for reviewing the
+              results.
+            </p>
+          </article>
+
+          <article class="role reveal">
+            <div class="role-date">2022–2024</div>
+            <div>
+              <h3>Software Developer</h3>
+              <div class="role-company">Zeta Softwares · India</div>
+            </div>
+            <p>
+              Built enterprise HR management applications and client-facing
+              reporting tools for airline and enterprise clients.
+            </p>
+          </article>
+
+          <article class="role reveal">
+            <div class="role-date">2017–2022</div>
+            <div>
+              <h3>Software Developer</h3>
+              <div class="role-company">OHO Software Innovation · India</div>
+            </div>
+            <p>
+              Built and maintained hospital management systems covering
+              billing, pharmacy and patient management.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div><div class="label">05 / Education</div></div>
+          <div>
+            <h2>Academic foundation for practical AI.</h2>
+          </div>
+        </div>
+
+        <div class="education">
+
+          <article class="edu reveal">
+            <div class="edu-year">2024 — 2026</div>
+            <h3>MSc Artificial Intelligence Engineering</h3>
+            <p>Jönköping University, Sweden</p>
+          </article>
+
+          <article class="edu reveal">
+            <div class="edu-year">2013 — 2016</div>
+            <h3>B.Tech, Computer Science</h3>
+            <p>Calicut University, India</p>
+          </article>
+
+          <article class="edu reveal">
+            <div class="edu-year">2010 — 2013</div>
+            <h3>Diploma in Computer Engineering</h3>
+            <p>IHRD, India</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact reveal">
+
+          <div class="label">06 / Contact</div>
+
+          <h2>Let's build something intelligent.</h2>
+
+          <p>
+            I'm interested in AI Engineer, Machine Learning Engineer and
+            Full-Stack Software Engineer opportunities where I can combine
+            AI with practical software engineering.
+          </p>
+
+          <div class="contact-details">
+            <a href="tel:+46764403008">+46 76 440 30 08</a>
+            <span class="sep">·</span>
+            <a href="mailto:jobsyjohnson@hotmail.com">jobsyjohnson@hotmail.com</a>
+            <span class="sep">·</span>
+            <a href="mailto:jobsyjohnson@gmail.com">jobsyjohnson@gmail.com</a>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-dark" href="mailto:jobsyjohnson@hotmail.com">Email me ↗</a>
+            <a class="btn btn-light" href="https://github.com/Jobsy-dev" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn btn-light" href="https://www.linkedin.com/in/jobsy-johnson/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn btn-light" href="resume.pdf" target="_blank">Resume ↗</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span>© 2026 Jobsy Johnson</span>
+        <span>AI Engineer · Full-Stack Developer</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
